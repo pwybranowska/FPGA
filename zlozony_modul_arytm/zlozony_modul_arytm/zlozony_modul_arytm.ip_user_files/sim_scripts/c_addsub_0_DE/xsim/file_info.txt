@@ -1,0 +1,1 @@
+c_addsub_0_DE.vhd,vhdl,xil_defaultlib,../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_DE/sim/c_addsub_0_DE.vhd,

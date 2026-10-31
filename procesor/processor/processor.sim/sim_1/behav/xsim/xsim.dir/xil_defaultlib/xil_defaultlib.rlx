@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/SR/processor/processor.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1750089248,vhdl,,,,c_addsub_0,,,,,,,,
+E:/SR/processor/processor.sim/sim_1/behav/xsim/glbl.v,1665704904,verilog,,,,glbl,,,,,,,,
+E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v,1750085512,verilog,,,,tb_processor,,,,,,,,
+E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v,1750108718,verilog,,E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v,,d_mem,,,,,,,,
+E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v,1750147864,verilog,,E:/SR/processor/processor.srcs/sources_1/new/processor.v,,i_mem,,,,,,,,
+E:/SR/processor/processor.srcs/sources_1/new/processor.v,1750103438,verilog,,E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v,,ALU;demux;jump_condition;mux;processor;register,,,,,,,,

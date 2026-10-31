@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_Y/sim/c_addsub_0_Y.vhd" \
+
+nosort

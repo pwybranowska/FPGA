@@ -1,0 +1,2068 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun 16 17:46:03 2025
+# Process ID: 4232
+# Current directory: E:/SR/processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7548 E:\SR\processor\processor.xpr
+# Log file: E:/SR/processor/vivado.log
+# Journal file: E:/SR/processor\vivado.jou
+# Running On: DESKTOP-TVNM7KU, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17053 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/SR/processor/processor.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1745.254 ; gain = 311.578
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1795.348 ; gain = 15.953
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/instr}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/pc_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/rx_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/imm_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/ry_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/rd_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/d_op}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/imm}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/demux_out}} 
+run 40 us
+run 40 us
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 40 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_res}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 40 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_sum}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_eqz}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_and}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/alu_imm}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 40 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/rx_mux_out}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_processor/procesor/imm_mux_out}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 40 us
+set_property CONFIG.Latency {0} [get_ips c_addsub_0]
+generate_target all [get_files  E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'c_addsub_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'c_addsub_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'c_addsub_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'c_addsub_0'...
+catch { config_ip_cache -export [get_ips -all c_addsub_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: c_addsub_0
+export_ip_user_files -of_objects [get_files E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -no_script -sync -force -quiet
+reset_run c_addsub_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/SR/processor/processor.runs/c_addsub_0_synth_1
+
+launch_runs c_addsub_0_synth_1 -jobs 6
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: c_addsub_0
+[Mon Jun 16 17:54:09 2025] Launched c_addsub_0_synth_1...
+Run output will be captured here: E:/SR/processor/processor.runs/c_addsub_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -directory E:/SR/processor/processor.ip_user_files/sim_scripts -ip_user_files_dir E:/SR/processor/processor.ip_user_files -ipstatic_source_dir E:/SR/processor/processor.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/SR/processor/processor.cache/compile_simlib/modelsim} {questa=E:/SR/processor/processor.cache/compile_simlib/questa} {riviera=E:/SR/processor/processor.cache/compile_simlib/riviera} {activehdl=E:/SR/processor/processor.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Proces nie mo¿e uzyskaæ dostêpu do pliku, poniewa¿ jest on u¿ywany przez inny proces: "E:/SR/processor/processor.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Proces nie mo¿e uzyskaæ dostêpu do pliku, poniewa¿ jest on u¿ywany przez inny proces: "E:/SR/processor/processor.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/SR/processor/processor.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_0'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1885.945 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1894.578 ; gain = 8.633
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 10 us
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_processor/procesor/r2}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1964.797 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1966.828 ; gain = 2.031
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 10 us
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xck26-sfvc784-2LV-c
+Top: processor
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3256.238 ; gain = 324.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'd_mem' [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'd_mem' (0#1) [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:5]
+INFO: [Synth 8-6157] synthesizing module 'i_mem' [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'i_mem' (0#1) [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v:5]
+INFO: [Synth 8-6157] synthesizing module 'demux' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'demux' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:253]
+INFO: [Synth 8-6157] synthesizing module 'mux' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+	Parameter N_x bound to: 2 - type: integer 
+	Parameter WIDTH_x bound to: 8 - type: integer 
+	Parameter WIDTH_a bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+INFO: [Synth 8-6157] synthesizing module 'register' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:282]
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:282]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:298]
+INFO: [Synth 8-6157] synthesizing module 'c_addsub_0' [E:/SR/processor/.Xil/Vivado-4232-DESKTOP-TVNM7KU/realtime/c_addsub_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'c_addsub_0' (0#1) [E:/SR/processor/.Xil/Vivado-4232-DESKTOP-TVNM7KU/realtime/c_addsub_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:298]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized0' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+	Parameter N_x bound to: 4 - type: integer 
+	Parameter WIDTH_x bound to: 8 - type: integer 
+	Parameter WIDTH_a bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized0' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+INFO: [Synth 8-6157] synthesizing module 'jump_condition' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:325]
+INFO: [Synth 8-6155] done synthesizing module 'jump_condition' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:325]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized1' [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+	Parameter N_x bound to: 8 - type: integer 
+	Parameter WIDTH_x bound to: 8 - type: integer 
+	Parameter WIDTH_a bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized1' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:269]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (0#1) [E:/SR/processor/processor.srcs/sources_1/new/processor.v:23]
+WARNING: [Synth 8-3848] Net data_memory[255] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[254] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[253] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[252] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[251] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[250] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[249] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[248] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[247] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[246] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[245] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[244] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[243] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[242] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[241] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[240] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[239] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[238] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[237] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[236] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[235] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[234] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[233] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[232] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[231] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[230] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[229] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[228] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[227] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[226] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[225] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[224] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[223] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[222] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[221] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[220] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[219] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[218] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[217] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[216] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[215] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[214] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[213] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[212] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[211] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[210] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[209] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[208] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[207] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[206] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[205] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[204] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[203] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[202] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[201] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[200] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[199] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[198] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[197] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[196] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[195] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[194] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[193] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[192] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[191] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[190] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[189] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[188] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[187] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[186] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[185] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[184] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[183] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[182] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[181] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[180] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[179] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[178] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[177] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[176] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[175] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[174] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[173] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[172] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[171] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[170] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[169] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[168] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[167] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[166] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[165] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[164] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[163] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[162] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[161] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[160] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[159] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[158] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[157] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+WARNING: [Synth 8-3848] Net data_memory[156] in module/entity d_mem does not have driver. [E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v:12]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3351.949 ; gain = 420.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3369.781 ; gain = 438.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3369.781 ; gain = 438.430
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/SR/processor/processor.gen/sources_1/ip/c_addsub_0/c_addsub_0.dcp' for cell 'alu/sum'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3400.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3428.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 3539.383 ; gain = 608.031
+31 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 3539.422 ; gain = 1570.109
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 3655.891 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3655.891 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/alu_res}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/jump_cond}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/tb_processor/procesor/pc_mux_out}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 3655.891 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/pc_op}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/rx_mux_out}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/pc_mux_out}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/jump_cond}} 
+run 100 us
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_processor/procesor/alu_eqz}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 3655.891 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3655.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 3655.891 ; gain = 0.000
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/tb_processor/procesor/jump_cond}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+open_project E:/procesor-20250614T210945Z-1-001/procesor/procesor.xpr
+INFO: [Project 1-313] Project file moved from 'E:/laby_procesor/procesor' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp', nor could it be found using path 'E:/laby_procesor/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp'.
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+WARNING: [Project 1-865] Could not find the file E:/procesor-20250614T210945Z-1-001/soft_processor/soft_processor.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'c_addsub_0' is locked:
+* Current project part 'xck26-sfvc784-2LV-c' and the part 'xc7vx485tffg1157-1' used to customize the IP 'c_addsub_0' do not match.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3854.371 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project processor
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 9}
+Untitled 9
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/jump_cond}} 
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/tb_processor/procesor/r3}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r3}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r4}} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r5}} 
+current_wave_config {Untitled 12}
+Untitled 12
+log_wave {/tb_processor/procesor/r7} 
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+current_project procesor
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_processor'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/imports/Downloads/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module jump_condition
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/SR/processor/processor.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+"xvhdl --incr --relax -prj tb_processor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.d_mem
+Compiling module xil_defaultlib.i_mem
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.register
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux(N_x=4,WIDTH_a=2)
+Compiling module xil_defaultlib.jump_condition
+Compiling module xil_defaultlib.mux(N_x=8,WIDTH_a=3)
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3854.371 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/SR/processor/processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 3854.371 ; gain = 0.000
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r3}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r4}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r5}} 
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 23:43:38 2025...

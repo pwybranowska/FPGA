@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_Y/sim/c_addsub_0_Y.vhd" \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/mult_gen_0_M1/sim/mult_gen_0_M1.vhd" \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_EF/sim/c_addsub_0_EF.vhd" \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_DE/sim/c_addsub_0_DE.vhd" \
+"../../../../zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_X/sim/c_addsub_0_X.vhd" \
+
+# Do not sort compile order
+nosort

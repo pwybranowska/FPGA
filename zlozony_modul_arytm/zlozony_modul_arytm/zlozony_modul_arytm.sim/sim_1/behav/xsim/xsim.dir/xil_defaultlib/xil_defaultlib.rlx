@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_DE/sim/c_addsub_0_DE.vhd,1743457720,vhdl,,,,c_addsub_0_de,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_EF/sim/c_addsub_0_EF.vhd,1743454404,vhdl,,,,c_addsub_0_ef,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_X/sim/c_addsub_0_X.vhd,1743453488,vhdl,,,,c_addsub_0_x,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/c_addsub_0_Y/sim/c_addsub_0_Y.vhd,1743455522,vhdl,,,,c_addsub_0_y,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1743454896,vhdl,,,,mult_gen_0,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.gen/sources_1/ip/mult_gen_0_M1/sim/mult_gen_0_M1.vhd,1743454684,vhdl,,,,mult_gen_0_m1,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.sim/sim_1/behav/xsim/glbl.v,1665704904,verilog,,,,glbl,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.srcs/sim_1/new/tb_complex_func.v,1743461630,verilog,,,,tb_complex_func,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.srcs/sources_1/new/complex_func.v,1743455798,verilog,,E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.srcs/sources_1/new/delay_line.v,,complex_func,,,,,,,,
+E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.srcs/sources_1/new/delay_line.v,1743455806,verilog,,E:/SR/zlozony_modul_arytm/zlozony_modul_arytm.srcs/sim_1/new/tb_complex_func.v,,delay_line;register,,,,,,,,

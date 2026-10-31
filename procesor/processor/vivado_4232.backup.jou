@@ -1,0 +1,285 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun 16 17:46:03 2025
+# Process ID: 4232
+# Current directory: E:/SR/processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7548 E:\SR\processor\processor.xpr
+# Log file: E:/SR/processor/vivado.log
+# Journal file: E:/SR/processor\vivado.jou
+# Running On: DESKTOP-TVNM7KU, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17053 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/SR/processor/processor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/instr}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/pc_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/rx_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/imm_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/ry_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/rd_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/d_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/imm}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/demux_out}} 
+run 40 us
+run 40 us
+restart
+run 40 us
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_res}} 
+restart
+run 40 us
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_sum}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_eqz}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_and}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/alu_imm}} 
+restart
+run 40 us
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/rx_mux_out}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_processor/procesor/imm_mux_out}} 
+restart
+run 40 us
+set_property CONFIG.Latency {0} [get_ips c_addsub_0]
+generate_target all [get_files  E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+catch { config_ip_cache -export [get_ips -all c_addsub_0] }
+export_ip_user_files -of_objects [get_files E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -no_script -sync -force -quiet
+reset_run c_addsub_0_synth_1
+launch_runs c_addsub_0_synth_1 -jobs 6
+wait_on_run c_addsub_0_synth_1
+export_simulation -of_objects [get_files E:/SR/processor/processor.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -directory E:/SR/processor/processor.ip_user_files/sim_scripts -ip_user_files_dir E:/SR/processor/processor.ip_user_files -ipstatic_source_dir E:/SR/processor/processor.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/SR/processor/processor.cache/compile_simlib/modelsim} {questa=E:/SR/processor/processor.cache/compile_simlib/questa} {riviera=E:/SR/processor/processor.cache/compile_simlib/riviera} {activehdl=E:/SR/processor/processor.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 10 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_processor/procesor/r2}} 
+restart
+run 10 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+run 10 us
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+run 100 us
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/alu_res}} 
+restart
+run 100 us
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/jump_cond}} 
+current_wave_config {Untitled 5}
+add_wave {{/tb_processor/procesor/pc_mux_out}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/pc_op}} 
+restart
+run 100 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/rx_mux_out}} 
+restart
+run 100 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/pc_mux_out}} 
+restart
+run 100 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/jump_cond}} 
+run 100 us
+restart
+run 100 us
+current_wave_config {Untitled 6}
+add_wave {{/tb_processor/procesor/alu_eqz}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 7}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 8}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 8}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 8}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 8}
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 8}
+add_wave {{/tb_processor/procesor/jump_cond}} 
+restart
+run 100 us
+open_project E:/procesor-20250614T210945Z-1-001/procesor/procesor.xpr
+update_compile_order -fileset sources_1
+current_project processor
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 9}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 10}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/r7}} 
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/jump_cond}} 
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/instr}} 
+restart
+run 100 us
+current_wave_config {Untitled 11}
+add_wave {{/tb_processor/procesor/r3}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r3}} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r4}} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r5}} 
+current_wave_config {Untitled 12}
+log_wave {/tb_processor/procesor/r7} 
+current_wave_config {Untitled 12}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+current_project procesor
+close_project
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 13}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+source tb_processor.tcl
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r0}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r1}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r2}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r3}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r4}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r5}} 
+current_wave_config {Untitled 14}
+add_wave {{/tb_processor/procesor/r7}} 
+restart
+run 100 us
+close_sim
